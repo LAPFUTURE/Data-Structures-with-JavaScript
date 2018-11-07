@@ -119,6 +119,7 @@
     function createList(){
         return new List();//不加括号会返回同一个List实例
     }
+    
     module.exports = createList;
         
     

@@ -1,5 +1,5 @@
 //这是一个工具模块
-let Customer = require('./Customer.js');
+const Customer = require("./Customer.js");
 
 function displayList(list){
     for(list.front(); list.currPos() < list.length(); list.next()){
@@ -19,9 +19,9 @@ function checkOut(name,movie,movieList,customerList){
     }else{
         console.log(movie + " is not available.");
     }
-};
+}
  
 module.exports = {
     displayList:displayList,
-    checkOut:checkOut
-}
+    checkOut:checkOut,
+};

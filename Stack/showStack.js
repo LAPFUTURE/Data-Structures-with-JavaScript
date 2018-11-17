@@ -5,9 +5,7 @@ let s = new Stack();
 let num = 31;
 let base =15;
 let tr = CYM.mulBase(num,base);
-console.log(tr);
-
-console.log(str);
+console.log(CYM.factorialStack(1));
 
 
 

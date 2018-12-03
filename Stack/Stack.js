@@ -31,8 +31,8 @@ function clear(){
     this.dataStore.length = 0;
 }
 
-function craeteStack(){
+function createStack(){
     return new Stack();
 }
 
-module.exports = craeteStack;
+module.exports = createStack;

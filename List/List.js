@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable no-use-before-define */
 // 这是一个List类,链表的数据结构
 function List() {
     this.listSize = 0;
@@ -36,7 +38,7 @@ function find(element) {
 }
 
 function remove(element) {
-    let foundAt = this.find(element);
+    const foundAt = this.find(element);
     if (foundAt > -1) {
         this.dataStore.splice(foundAt, 1);
         this.listSize--;
@@ -53,8 +55,8 @@ function toString() {
     return this.dataStore;
 }
 
-function insert(element, after) { //感觉有问题
-    let insertPos = this.find(after);
+function insert(element, after) { // 感觉有问题
+    const insertPos = this.find(after);
     if (insertPos > -1) {
         this.dataStore.splice(insertPos + 1, 0, element);
         this.listSize++;
@@ -116,12 +118,12 @@ function hasPrev() {
     return this.pos >= 0;
 }
 
-function createList(){
-    return new List();//不加括号会返回同一个List实例，即成为单体
+function createList() {
+    return new List();// 不加括号会返回同一个List实例，即成为单体
 }
-    
+
 module.exports = createList;
 // module.exports = (function(){
 //     return new List();
 // }());
-    
+

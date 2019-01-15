@@ -9,7 +9,7 @@ function Queue(){
 }
 
 function enqueue(element){//向队尾添加元素
-    this.dataStore.push = element;
+    this.dataStore.push(element);
 }
 
 function dequeue(){//向队首删除元素

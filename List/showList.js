@@ -8,7 +8,6 @@ const CYM= require("./CYM.js");
 let movieList = new List();
 let customers = new List();
 
-
 let moviesString = fs.readFileSync("movie.txt");
 let movies = moviesString.toString().split("\r\n");
 for(let i = 0,length = movies.length; i < length; i++){
